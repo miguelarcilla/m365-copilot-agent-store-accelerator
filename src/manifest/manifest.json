@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.22/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.22",
+  "version": "1.0.0",
+  "id": "your-app-id-here",
+  "developer": {
+    "name": "M365 Copilot Accelerator",
+    "websiteUrl": "https://github.com/miguelarcilla/m365-copilot-agent-store-accelerator",
+    "privacyUrl": "https://privacy.microsoft.com/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/servicesagreement/"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Stock Price Agent",
+    "full": "M365 Copilot Stock Price Information Agent"
+  },
+  "description": {
+    "short": "Get real-time stock prices for companies mentioned in your messages",
+    "full": "A Microsoft 365 Copilot Agent that automatically detects company names and stock symbols in your messages and provides real-time stock price information with rich visual cards showing current prices, changes, and trading data."
+  },
+  "accentColor": "#FFFFFF",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "agent1",
+        "file": "declarativeAgent1.json"
+      }
+    ]
+  }
+}
