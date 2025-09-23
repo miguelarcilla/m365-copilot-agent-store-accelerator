@@ -1,0 +1,30 @@
+{
+  "name": "m365-copilot-stock-agent",
+  "version": "1.0.0",
+  "description": "Microsoft 365 Copilot Agent for stock price information",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "microsoft365",
+    "copilot",
+    "bot",
+    "stock",
+    "finance"
+  ],
+  "author": "Microsoft 365 Copilot Agent Store Accelerator",
+  "license": "MIT",
+  "dependencies": {
+    "botbuilder": "^4.20.0",
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0"
+  }
+}
