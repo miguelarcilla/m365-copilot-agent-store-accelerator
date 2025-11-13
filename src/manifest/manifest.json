@@ -29,5 +29,31 @@
         "file": "declarativeAgent1.json"
       }
     ]
-  }
+  },
+  "bots": [ 
+        { 
+            "botId": "${{BOT_ID}}", 
+            "scopes": [ 
+                "copilot", 
+                "personal", 
+                "team" 
+            ], 
+            "supportsFiles": false, 
+            "isNotificationOnly": false, 
+            "commandLists": [ 
+                { 
+                    "scopes": [ 
+                        "copilot", 
+                        "personal" 
+                    ], 
+                    "commands": [ 
+                        { 
+                            "title": "How can you help me?", 
+                            "description": "How can you help me?" 
+                        } 
+                    ] 
+                } 
+            ] 
+        } 
+    ]
 }
