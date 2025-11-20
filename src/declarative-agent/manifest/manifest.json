@@ -1,0 +1,74 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.22/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.22",
+    "version": "1.0.0",
+    "id": "${{TEAMS_APP_ID}}",
+    "developer": {
+        "name": "M365 Copilot Accelerator",
+        "websiteUrl": "https://github.com/miguelarcilla/m365-copilot-agent-store-accelerator",
+        "privacyUrl": "https://privacy.microsoft.com/privacystatement",
+        "termsOfUseUrl": "https://www.microsoft.com/servicesagreement/"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Miguel's Agent",
+        "full": "Miguel's Teams + Copilot Agent"
+    },
+    "description": {
+        "short": "Demonstrates SSO capabilities in a bot",
+        "full": "Demonstrates Single Sign On (SSO) capabilities in a Teams bot using M365 Copilot Agent framework."
+    },
+    "accentColor": "#FFFFFF",
+    "copilotAgents": {
+        "customEngineAgents": [
+            {
+                "type": "bot",
+                "id": "${{BOT_ID}}"
+            }
+        ]
+    },
+    "bots": [
+        {
+            "botId": "${{BOT_ID}}",
+            "scopes": [
+                "copilot", 
+                "personal",
+                "team"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "copilot", 
+                        "personal",
+                        "team"
+                    ],
+                    "commands": [
+                        {
+                            "title": "show",
+                            "description": "Show user profile using Single Sign On feature"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "${{BOT_DOMAIN}}"
+    ],
+    "webApplicationInfo": {
+        "id": "${{AAD_APP_CLIENT_ID}}",
+        "resource": "api://botid-${{BOT_ID}}"
+    }
+}
