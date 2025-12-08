@@ -1,15 +1,15 @@
-# Microsoft 365 Copilot Agent Store Accelerator
-
-A comprehensive solution accelerator that makes it easier to build, publish, and monetize Agents for Microsoft 365 Copilot in the Microsoft Commercial Marketplace.
+# Microsoft 365 Copilot Agent + Store Accelerator
 
 ## Overview
 
-This repository provides a structured approach and guidance for developing Microsoft 365 Copilot agents, from initial concept to marketplace publication. Whether you're building conversational AI experiences, workflow automation, or data integration solutions, this accelerator helps streamline the development and publishing process.
+This repository contains examples of the approaches developers can take to build Agents for Microsoft 365 Copilot, and publish + monetize them through the Microsoft Commercial Marketplace.
+
+Follow this guide to understand the repository structure, select your code approach, and determine your Marketplace publishing strategy.
 
 ## Directory Structure
 
 ```
-├── docs/           # Documentation and guides
+├── docs/           # Documentation modules and guides
 ├── src/            # Source code for agent implementations
 ├── assets/         # Images, icons, and media resources
 └── README.md       # This file
