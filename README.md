@@ -19,12 +19,20 @@ Follow this guide to understand the repository structure, select your code appro
 
 ### 1. Prerequisites
 
-Before starting your agent development:
+Before starting your agent development, you should have the following items provisioned:
 
-- **Microsoft 365 Developer Tenant**: Sign up for a [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program) account
-- **Azure Subscription**: Required for hosting agent services and resources
-- **Development Tools**: Visual Studio Code, Azure CLI, and relevant SDKs
-- **Copilot Studio Access**: Available through Microsoft 365 admin center
+- **Microsoft 365 Developer Environment** - This is the tenant against which you will deploy and test agents. Your options include:
+  - A Microsoft 365 production tenant (ex. your actual work tenant) 
+    - If you pursue this option, ensure you have administrator permissions to sideload apps to Copilot and Teams
+    - If you with want to test advanced Microsoft 365 Copilot agent capabilities, you will also need a Microsoft 365 Copilot license.
+  - A [Microsoft 365 Developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). This non-production tenant is available for Visual Studio subscribers and Microsoft Partners.
+
+- **Development Tools**
+  - Visual Studio and VSCode are well-supported for agent development
+  - [Microsoft 365 Agents Toolkit](https://learn.microsoft.com/en-us/microsoft-365/developer/overview-m365-agents-toolkit) is a supported add-in for VS, VSCode, and GitHub Copilot to streamline the development and publishing processes
+  - Azure CLI to perform programmatic Azure tasks
+
+- **Azure Subscription** - This is recommended to provision Entra applications, Azure Bot services, and your custom application services (that will run in web or container apps)
 
 ### 2. Agent Planning and Design
 
