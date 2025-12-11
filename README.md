@@ -34,6 +34,13 @@ Before starting your agent development, you should have the following items prov
 
 - **Azure Subscription** - This is recommended to provision Entra applications, Azure Bot services, and your custom application services (that will run in web or container apps)
 
+### 2. Agent Development Approach
+
+- **Declarative Agent**
+  - Declarative agents are designed to configure Copilot for specific scenarios by adding custom instructions, additional knowledge, and actions to automate business processes. They leverage Copilot's existing AI infrastructure, ensuring adherence to security, compliance, and responsible AI (RAI) requirements.
+- **Custom Engine Agent**
+  - Custom engine agents are fully customized AI assistants suitable for scenarios requiring complex workflows, advanced orchestration, or specialized language models. They offer greater flexibility and control but require additional hosting and compliance measures.
+
 ### 2. Agent Planning and Design
 
 - **Define Use Cases**: Identify specific business scenarios your agent will address
