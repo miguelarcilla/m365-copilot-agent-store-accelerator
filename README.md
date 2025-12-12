@@ -24,7 +24,7 @@ Before starting your agent development, you should have the following items prov
 - **Microsoft 365 Developer Environment** - This is the tenant against which you will deploy and test agents. Your options include:
   - A Microsoft 365 production tenant (ex. your actual work tenant) 
     - If you pursue this option, ensure you have administrator permissions to sideload apps to Copilot and Teams
-    - If you with want to test advanced Microsoft 365 Copilot agent capabilities, you will also need a Microsoft 365 Copilot license.
+    - If you want to test advanced Microsoft 365 Copilot agent capabilities, you will also need a Microsoft 365 Copilot license.
   - A [Microsoft 365 Developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). This non-production tenant is available for Visual Studio subscribers and Microsoft Partners.
 
 - **Development Tools**
