@@ -17,7 +17,7 @@ Follow this guide to understand the repository structure, select your code appro
 
 ## Building Agents for Microsoft 365 Copilot
 
-### 1. Prerequisites
+### 1. Gather your Pre-requisites
 
 Before starting your agent development, you should have the following items provisioned:
 
@@ -34,19 +34,12 @@ Before starting your agent development, you should have the following items prov
 
 - **Azure Subscription** - This is recommended to provision Entra applications, Azure Bot services, and your custom application services (that will run in web or container apps)
 
-### 2. Agent Development Approach
+### 2. Choose your Agent Development Approach
 
 - **Declarative Agent**
-  - Declarative agents are designed to configure Copilot for specific scenarios by adding custom instructions, additional knowledge, and actions to automate business processes. They leverage Copilot's existing AI infrastructure, ensuring adherence to security, compliance, and responsible AI (RAI) requirements.
+  - Declarative agents extend base M365 Copilot capability with custom instructions, additional knowledge, and actions to automate business processes. They leverage Copilot's existing AI infrastructure (no need to supply your own LLM), ensuring adherence to security, compliance, and responsible AI (RAI) requirements.
 - **Custom Engine Agent**
-  - Custom engine agents are fully customized AI assistants suitable for scenarios requiring complex workflows, advanced orchestration, or specialized language models. They offer greater flexibility and control but require additional hosting and compliance measures.
-
-### 2. Agent Planning and Design
-
-- **Define Use Cases**: Identify specific business scenarios your agent will address
-- **User Experience Design**: Plan conversational flows and interaction patterns
-- **Data Requirements**: Determine what data sources and APIs your agent needs
-- **Integration Points**: Identify Microsoft 365 apps and services to integrate with
+  - Custom engine agents are fully customized AI assistants, suitable for scenarios requiring complex workflows, advanced orchestration, or specialized language models. They offer greater flexibility and control but require additional hosting and compliance measures (developers must supply a model, API endpoints, and ensure responsible AI requirements are met).
 
 ### 3. Development Process
 
